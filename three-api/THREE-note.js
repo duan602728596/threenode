@@ -60,6 +60,7 @@ new THREE.MeshFaceMaterial() // 设置不同面的贴图，参数为单个贴图
 texture.wrapS texture.wrapT = THREE.RepeatWrapping // 贴图的重复方式
 texture.repeat.set(x, y)     // 重复次数
 new THREE.Texture(canvas)    // 将canvas作为贴图
+texture1.needsUpdate = true;
 
 /*** 将模型和贴图结合 ***/
 var mesh = new THREE.Mesh(形状, 材质);
